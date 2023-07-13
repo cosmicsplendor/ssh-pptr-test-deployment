@@ -60,6 +60,9 @@ const startScraping = async () => {
   propertyNames.forEach((name, index) => {
     console.log(`[${index + 1}] ${name}`)
   })
+
+  await page.close()
+  await browser.close()
 }
 
 startScraping()
