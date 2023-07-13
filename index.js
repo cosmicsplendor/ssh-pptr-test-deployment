@@ -14,7 +14,7 @@ const selectors = {
 
 const startScraping = async () => {
   const browser = await puppeteer.launch({
-    headless: false
+    headless: "new"
   })
   const page = await browser.newPage()
 
